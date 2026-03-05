@@ -34,10 +34,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-28 09:33:05.591572",
+ "modified": "2026-03-05 12:33:59.601092",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Software Configuration",
+ "naming_rule": "By script",
  "owner": "Administrator",
  "permissions": [
   {
