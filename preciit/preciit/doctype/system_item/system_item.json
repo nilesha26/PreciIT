@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-18 11:17:34.289248",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "model",
+  "serial_no",
+  "department",
+  "host_name",
+  "company",
+  "column_break_eihh",
+  "device_type",
+  "make",
+  "password",
+  "phone_no",
+  "item_status",
+  "section_break_eneo",
+  "desktop_configuration",
+  "laptop_configuration",
+  "mobile_configuration",
+  "tab_configuration",
+  "section_break_oroo",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_oroo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "System Item",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "column_break_eihh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No"
+  },
+  {
+   "fieldname": "device_type",
+   "fieldtype": "Link",
+   "label": "Device Type",
+   "options": "Device Type"
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make"
+  },
+  {
+   "fieldname": "section_break_eneo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "desktop_configuration",
+   "fieldtype": "Table",
+   "label": "Desktop Configuration",
+   "options": "Desktop Configuration"
+  },
+  {
+   "fieldname": "laptop_configuration",
+   "fieldtype": "Table",
+   "label": "Laptop Configuration",
+   "options": "Laptop Configuration"
+  },
+  {
+   "fieldname": "mobile_configuration",
+   "fieldtype": "Table",
+   "label": "Mobile Configuration",
+   "options": "Mobile Configuration"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password"
+  },
+  {
+   "default": "+91",
+   "fieldname": "phone_no",
+   "fieldtype": "Phone",
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "tab_configuration",
+   "fieldtype": "Table",
+   "label": "Tab Configuration",
+   "options": "Tab Configuration"
+  },
+  {
+   "fieldname": "host_name",
+   "fieldtype": "Data",
+   "label": "Host Name"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "item_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Item Status",
+   "options": "Draft\nSubmit\nAvailable\nAllocated\nDecommissioning",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Software Configuration",
+   "link_fieldname": "item"
+  },
+  {
+   "link_doctype": "Asset Allocation",
+   "link_fieldname": "asset"
+  }
+ ],
+ "modified": "2026-02-27 16:40:57.582414",
+ "modified_by": "Administrator",
+ "module": "PreciIT",
+ "name": "System Item",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

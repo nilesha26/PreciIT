@@ -1,0 +1,74 @@
+{
+ "_comments": "[{\"comment\": \"Action Failed<br><br><pre><code>Traceback (most recent call last):\\n  File \\\"apps/frappe/frappe/mod...\", \"by\": \"Administrator\", \"name\": \"6hbja7m3e6\"}]",
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-24 12:42:20.104451",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ram",
+  "hdd_type",
+  "graphics",
+  "processor",
+  "hdd_space",
+  "ssd_space",
+  "color"
+ ],
+ "fields": [
+  {
+   "fieldname": "ram",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ram",
+   "options": "\nHDD\nSSD\nBoth"
+  },
+  {
+   "fieldname": "hdd_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "HDD Type",
+   "options": "\nHDD\nSSD\nBoth"
+  },
+  {
+   "fieldname": "graphics",
+   "fieldtype": "Data",
+   "label": "Graphics"
+  },
+  {
+   "fieldname": "processor",
+   "fieldtype": "Data",
+   "label": "Processor"
+  },
+  {
+   "fieldname": "hdd_space",
+   "fieldtype": "Data",
+   "label": "HDD Space"
+  },
+  {
+   "fieldname": "ssd_space",
+   "fieldtype": "Data",
+   "label": "SSD Space"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-24 14:13:59.654059",
+ "modified_by": "Administrator",
+ "module": "PreciIT",
+ "name": "Laptop Configuration",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

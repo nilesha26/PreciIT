@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-23 10:55:26.522953",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "processor",
+  "ram_gbt",
+  "storage_gb",
+  "battery_mah",
+  "screen_size",
+  "operating_system",
+  "escan_status",
+  "iemi1",
+  "iemi2",
+  "color"
+ ],
+ "fields": [
+  {
+   "fieldname": "processor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Processor"
+  },
+  {
+   "fieldname": "ram_gbt",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "RAM (GB)"
+  },
+  {
+   "fieldname": "storage_gb",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Storage (GB)",
+   "options": "\n64\n128\n256\n512"
+  },
+  {
+   "fieldname": "battery_mah",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Battery (mAh)"
+  },
+  {
+   "fieldname": "screen_size",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Screen Size"
+  },
+  {
+   "fieldname": "operating_system",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Operating System",
+   "options": "\nAndroid\niOS"
+  },
+  {
+   "fieldname": "escan_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "EScan Status",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "iemi1",
+   "fieldtype": "Data",
+   "label": "IEMI1"
+  },
+  {
+   "fieldname": "iemi2",
+   "fieldtype": "Data",
+   "label": "IEMI2"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-23 15:22:36.354888",
+ "modified_by": "Administrator",
+ "module": "PreciIT",
+ "name": "Mobile Configuration",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
