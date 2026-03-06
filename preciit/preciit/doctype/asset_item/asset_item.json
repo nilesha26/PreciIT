@@ -14,7 +14,6 @@
   "device_type",
   "make",
   "password",
-  "phone_no",
   "item_status",
   "section_break_eneo",
   "desktop_configuration",
@@ -92,12 +91,6 @@
    "label": "Password"
   },
   {
-   "default": "+91",
-   "fieldname": "phone_no",
-   "fieldtype": "Phone",
-   "label": "Phone No"
-  },
-  {
    "fieldname": "tab_configuration",
    "fieldtype": "Table",
    "label": "Tab Configuration",
@@ -143,7 +136,7 @@
    "link_fieldname": "asset"
   }
  ],
- "modified": "2026-03-05 12:26:19.017604",
+ "modified": "2026-03-06 16:54:41.489959",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Asset Item",
