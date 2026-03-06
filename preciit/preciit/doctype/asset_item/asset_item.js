@@ -1,7 +1,7 @@
 // =============================
 // SYSTEM ITEM (Parent)
 // =============================
-frappe.ui.form.on("System Item", {
+frappe.ui.form.on("Asset Item", {
 
 	refresh(frm) {
 

@@ -6,14 +6,18 @@ from frappe.model.document import Document
 from frappe.model.naming import make_autoname
 
 
-class SystemItem(Document):
+class AssetItem(Document):
 
     def autoname(self):
 
         # Company Short Codes
         company_map = {
-            "Precihole Sports": "PSPL",
-            "Precihole Machine Tool": "PMTPL"
+            "Precihole Sports Pvt. Ltd.": "PSPL",
+            "Precihole Machine Tools Pvt. Ltd.": "PMTPL",
+            "Precihole Arms Pvt. Ltd.":"PAPL",
+            "Precihole Foundation":"PFPL",
+            "Precihole Group":"PG",
+            "Precihole Machine Tool Pvt. Ltd.": "PMTPL"
         }
 
         company_code = company_map.get(self.company, "COMP")

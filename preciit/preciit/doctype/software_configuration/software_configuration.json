@@ -14,7 +14,7 @@
    "fieldname": "item",
    "fieldtype": "Link",
    "label": "Item",
-   "options": "System Item",
+   "options": "Asset Item",
    "read_only": 1
   },
   {
@@ -34,7 +34,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-05 12:33:59.601092",
+ "modified": "2026-03-06 14:07:49.792508",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Software Configuration",
