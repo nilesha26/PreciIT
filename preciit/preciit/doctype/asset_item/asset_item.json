@@ -56,7 +56,8 @@
    "fieldname": "device_type",
    "fieldtype": "Link",
    "label": "Device Type",
-   "options": "Device Type"
+   "options": "Device Type",
+   "reqd": 1
   },
   {
    "fieldname": "make",
@@ -105,7 +106,8 @@
    "fieldname": "company",
    "fieldtype": "Link",
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "department",
@@ -136,7 +138,7 @@
    "link_fieldname": "asset"
   }
  ],
- "modified": "2026-03-06 16:54:41.489959",
+ "modified": "2026-03-06 16:58:34.260906",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Asset Item",
