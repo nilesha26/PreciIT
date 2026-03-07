@@ -1,5 +1,4 @@
 {
- "_comments": "[{\"comment\": \"Action Failed<br><br><pre><code>Traceback (most recent call last):\\n  File \\\"apps/frappe/frappe/mod...\", \"by\": \"Administrator\", \"name\": \"6hbja7m3e6\"}]",
  "actions": [],
  "allow_rename": 1,
  "creation": "2026-02-24 12:42:20.104451",
@@ -8,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "ram",
+  "ddr_type",
   "hdd_type",
   "graphics",
   "processor",
@@ -33,34 +33,46 @@
   {
    "fieldname": "graphics",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Graphics"
   },
   {
    "fieldname": "processor",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Processor"
   },
   {
    "fieldname": "hdd_space",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "HDD Space"
   },
   {
    "fieldname": "ssd_space",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "SSD Space"
   },
   {
    "fieldname": "color",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Color"
+  },
+  {
+   "fieldname": "ddr_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "DDR Type",
+   "options": "\n1\n2\n3\n4\n5\n6"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-02-24 14:13:59.654059",
+ "modified": "2026-03-07 10:04:38.404027",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Laptop Configuration",
