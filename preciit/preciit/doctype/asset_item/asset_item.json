@@ -116,12 +116,12 @@
    "options": "Department"
   },
   {
-   "allow_on_submit": 1,
+   "default": "Asset",
    "fieldname": "item_status",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Item Status",
-   "options": "Asset Created\nSoftware Configured\nAvailable\nAllocated\nDecommissioning",
+   "options": "Asset\nSoftware Configured\nAvailable\nAllocated\nDecommissioning",
    "read_only": 1
   }
  ],
@@ -138,7 +138,7 @@
    "link_fieldname": "asset"
   }
  ],
- "modified": "2026-03-10 14:07:06.465461",
+ "modified": "2026-03-10 14:11:39.813785",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Asset Item",
