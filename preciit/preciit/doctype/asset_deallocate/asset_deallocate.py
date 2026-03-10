@@ -7,7 +7,7 @@ from frappe.model.document import Document
 
 class AssetDeallocate(Document):
 
-    def on_submit(self):
+    def on_update(self):
 
         if not self.deallocation_device:
             return
@@ -22,6 +22,5 @@ class AssetDeallocate(Document):
                 row.asset,       # <-- correct field (must be the document name)
                 "item_status",
                 "Available",
-                update_modified=False,
-				ignore_version=True
+                update_modified=False
             )

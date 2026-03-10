@@ -7,7 +7,6 @@
  "field_order": [
   "model",
   "serial_no",
-  "department",
   "host_name",
   "company",
   "column_break_eihh",
@@ -110,12 +109,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "department",
-   "fieldtype": "Link",
-   "label": "Department",
-   "options": "Department"
-  },
-  {
    "default": "Asset",
    "fieldname": "item_status",
    "fieldtype": "Select",
@@ -138,7 +131,7 @@
    "link_fieldname": "asset"
   }
  ],
- "modified": "2026-03-10 14:11:39.813785",
+ "modified": "2026-03-10 15:20:12.624120",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Asset Item",

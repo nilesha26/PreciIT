@@ -9,6 +9,7 @@
   "employee",
   "employee_name",
   "assign_date",
+  "department",
   "asset_status",
   "assigned_device"
  ],
@@ -42,12 +43,18 @@
    "fieldtype": "Select",
    "label": "Asset Status",
    "options": "\nActive\nClosed"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-27 11:50:36.774717",
+ "modified": "2026-03-10 15:21:29.355824",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Asset Allocation",
