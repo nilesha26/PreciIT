@@ -10,3 +10,16 @@ class SoftwareConfiguration(Document):
 	def autoname(self):
 		prefix = self.item.replace(" ", "").upper()
 		self.name = make_autoname(f"{prefix}-.##")
+	
+	def on_update(self):
+
+		if not self.item:
+			return
+
+		frappe.db.set_value(
+			"Asset Item",
+			self.item,
+			"item_status",
+			"Software Configured",
+			update_modified=False
+		)
