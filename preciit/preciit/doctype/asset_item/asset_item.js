@@ -7,15 +7,6 @@ frappe.ui.form.on("Asset Item", {
 
 		if (!frm.is_new()) {
 
-			// Option 1
-			frm.add_custom_button("Assign to Employee", function () {
-
-				frappe.new_doc("Asset Allocation", {
-					system_item: frm.doc.name
-				});
-
-			}, "Actions");
-
 			// Option 2
 			frm.add_custom_button("Software Configuration", function () {
 
@@ -25,6 +16,26 @@ frappe.ui.form.on("Asset Item", {
 				});
 
 			}, "Actions");
+
+
+			// Option 1
+			frm.add_custom_button("Assign to Employee", function () {
+
+				frappe.new_doc("Asset Allocation", {
+					system_item: frm.doc.name
+				});
+
+			}, "Actions");
+
+			
+			frm.add_custom_button("Asset Deallocate", function () {
+
+				frappe.new_doc("Asset Deallocate", {
+					item: frm.doc.name,
+				});
+
+			}, "Actions");
+
             frm.add_custom_button("Asset Decommissioning", function () {
             frappe.new_doc("Asset Decommissioning", {}, (doc) => {
                            
