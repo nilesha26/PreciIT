@@ -121,7 +121,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Item Status",
-   "options": "Draft\nSubmit\nAvailable\nAllocated\nDecommissioning",
+   "options": "Software Configured\nAvailable\nAllocated\nDecommissioning",
    "read_only": 1
   }
  ],
@@ -138,7 +138,7 @@
    "link_fieldname": "asset"
   }
  ],
- "modified": "2026-03-06 16:58:34.260906",
+ "modified": "2026-03-10 12:27:29.762838",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Asset Item",

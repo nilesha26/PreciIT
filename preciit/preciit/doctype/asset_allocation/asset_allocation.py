@@ -14,10 +14,9 @@ class AssetAllocation(Document):
                 continue
 
             frappe.db.set_value(
-                "System Item",   
+                "Asset Item",   
                 row.asset,       
                 "item_status",
                 "Allocated",
-                update_modified=False,
-				ignore_version=False
+                update_modified=False
             )

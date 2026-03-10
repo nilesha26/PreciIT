@@ -8,6 +8,7 @@
   "section_break_4qte",
   "date",
   "asset_decommissioning",
+  "details",
   "amended_from"
  ],
  "fields": [
@@ -35,13 +36,18 @@
    "fieldtype": "Table",
    "label": "Asset Decommissioning ",
    "options": "System Configuration Item"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Small Text",
+   "label": "Details"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-02-27 17:20:08.318961",
+ "modified": "2026-03-10 12:32:27.632296",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Asset Decommissioning",

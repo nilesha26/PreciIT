@@ -10,12 +10,16 @@
   "ram",
   "ddr_type",
   "hdd_type",
-  "processor",
-  "graphics",
   "hdd_space",
   "ssd_space",
+  "processor",
+  "graphics",
   "screen_size",
-  "make"
+  "make",
+  "serial_no",
+  "warranty_status",
+  "warranty_till",
+  "device_type"
  ],
  "fields": [
   {
@@ -80,13 +84,35 @@
    "in_list_view": 1,
    "label": "DDR Type",
    "options": "\n1\n2\n3\n4\n5\n6"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No"
+  },
+  {
+   "fieldname": "warranty_status",
+   "fieldtype": "Select",
+   "label": "Warranty Status",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "warranty_till",
+   "fieldtype": "Date",
+   "label": "Warranty Till"
+  },
+  {
+   "fieldname": "device_type",
+   "fieldtype": "Select",
+   "label": "Device Type",
+   "options": "\nWired\nWireless"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-07 10:03:24.913038",
+ "modified": "2026-03-10 12:25:31.674952",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Desktop Configuration",

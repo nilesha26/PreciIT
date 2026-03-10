@@ -18,7 +18,7 @@ class AssetDeallocate(Document):
                 continue
 
             frappe.db.set_value(
-                "System Item",   # <-- confirm this doctype name
+                "Asset Item",   # <-- confirm this doctype name
                 row.asset,       # <-- correct field (must be the document name)
                 "item_status",
                 "Available",
