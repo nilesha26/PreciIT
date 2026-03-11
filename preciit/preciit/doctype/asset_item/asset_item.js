@@ -169,7 +169,7 @@ function toggle_desktop_fields(frm, cdt, cdn) {
 	if (row.component === "Keyboard") {
 		grid.update_docfield_property("screen_size", "hidden", 1);
 		grid.update_docfield_property("make", "hidden", 0);
-		grid.update_docfield_property("serial_no", "hidden", 1);
+		grid.update_docfield_property("serial_no", "hidden", 0);
 		grid.update_docfield_property("device_type", "hidden", 0);
 		grid.update_docfield_property("ram", "hidden", 1);
 		grid.update_docfield_property("processor", "hidden", 1);
