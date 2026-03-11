@@ -116,7 +116,7 @@ function toggle_desktop_fields(frm, cdt, cdn) {
 		"graphics",
 		"screen_size",
 		"make",
-		"ddr_type","warranty_status","warranty_till","device_type","serial_no"
+		"ddr_type","device_type","serial_no"
 	];
 
 	all_fields.forEach(field => {
