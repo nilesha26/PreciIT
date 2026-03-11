@@ -94,6 +94,9 @@ frappe.ui.form.on("Desktop Configuration", {
 	hdd_type(frm, cdt, cdn) {
 		toggle_desktop_fields(frm, cdt, cdn);
 	},
+	warranty_status(frm, cdt, cdn) {
+		toggle_desktop_fields(frm, cdt, cdn);
+	},
 
 	form_render(frm, cdt, cdn) {
 		toggle_desktop_fields(frm, cdt, cdn);
