@@ -130,6 +130,10 @@ function toggle_desktop_fields(frm, cdt, cdn) {
 		grid.update_docfield_property("ddr_type", "hidden", 1);
 		grid.update_docfield_property("device_type", "hidden", 1);
         grid.update_docfield_property("hdd_type", "hidden", 1);
+
+		if (row.warranty_status === "Yes") {
+			grid.update_docfield_property("warranty_till", "hidden", 0);
+		}
 	}
 
 	// CPU logic
@@ -155,6 +159,9 @@ function toggle_desktop_fields(frm, cdt, cdn) {
 			grid.update_docfield_property("ssd_space", "hidden", 0);
 			grid.update_docfield_property("hdd_space", "hidden", 0);
 		}
+		if (row.warranty_status === "Yes") {
+			grid.update_docfield_property("warranty_till", "hidden", 0);
+		}
 	}
 	if (row.component === "Keyboard") {
 		grid.update_docfield_property("screen_size", "hidden", 1);
@@ -165,6 +172,10 @@ function toggle_desktop_fields(frm, cdt, cdn) {
 		grid.update_docfield_property("processor", "hidden", 1);
 		grid.update_docfield_property("graphics", "hidden", 1);
         grid.update_docfield_property("hdd_type", "hidden", 1);
+
+		if (row.warranty_status === "Yes") {
+			grid.update_docfield_property("warranty_till", "hidden", 0);
+		}
 
 	}
 	if (row.component === "Mouse") {
@@ -177,10 +188,12 @@ function toggle_desktop_fields(frm, cdt, cdn) {
 		grid.update_docfield_property("graphics", "hidden", 1);
         grid.update_docfield_property("hdd_type", "hidden", 1);
 
-	}
-	if (row.warranty_status === "Yes") {
+		if (row.warranty_status === "Yes") {
 			grid.update_docfield_property("warranty_till", "hidden", 0);
+		}
+
 	}
+	
 
 	frm.refresh_field("desktop_configuration");
 }
