@@ -27,13 +27,13 @@ function toggle_desktop_fields(frm, cdt, cdn) {
 	let all_fields = [
 		"software_key",
 		"status",
-		"license_expiration",
-		"map_drive"
+		"map_drive",
+		"license_expiration"
+		
 	];
 
 	all_fields.forEach(field => {
 		grid.update_docfield_property(field, "hidden", 1);
-		grid.update_docfield_property("map_drive", "hidden", 1);
 	});
 
 	// Monitor logic

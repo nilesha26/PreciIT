@@ -130,6 +130,7 @@ function toggle_desktop_fields(frm, cdt, cdn) {
 	// Monitor logic
 	if (row.component === "Monitor") {
 		grid.update_docfield_property("screen_size", "hidden", 0);
+		grid.update_docfield_property("serial_no", "hidden", 0);
 		grid.update_docfield_property("make", "hidden", 0);
 		grid.update_docfield_property("ddr_type", "hidden", 1);
 		grid.update_docfield_property("device_type", "hidden", 1);
