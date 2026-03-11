@@ -13,11 +13,11 @@ class AssetItem(Document):
         # Company Short Codes
         company_map = {
             "Precihole Sports Pvt. Ltd.": "PSPL",
-            "Precihole Machine Tools Pvt. Ltd.": "PMTPL",
+            "Precihole Machine Tools Pvt. Ltd.": "PMT",
             "Precihole Arms Pvt. Ltd.":"PAPL",
             "Precihole Foundation":"PFPL",
             "Precihole Group":"PG",
-            "Precihole Machine Tool Pvt. Ltd.": "PMTPL"
+            "Precihole Machine Tool Pvt. Ltd.": "PMT"
         }
 
         company_code = company_map.get(self.company, "COMP")

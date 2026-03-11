@@ -5,7 +5,7 @@ frappe.ui.form.on("Asset Item", {
 
 	refresh(frm) {
 
-		if (!frm.is_new()) {
+		if (!frm.is_new() && doc.docstatus == 1) {
 
 			// Option 2
 			frm.add_custom_button("Software Configuration", function () {
