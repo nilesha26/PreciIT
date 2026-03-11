@@ -1,22 +1,11 @@
 // =============================
-// SYSTEM ITEM (Parent)
+// Asset Item (Parent)
 // =============================
 frappe.ui.form.on("Asset Item", {
 
 	refresh(frm) {
 
-		if (!frm.is_new() && frm.doc.docstatus == 1 ) {
-
-			// Option 2
-			frm.add_custom_button("Software Configuration", function () {
-
-				frappe.new_doc("Software Configuration", {
-					item: frm.doc.name,
-                    device: frm.doc.device_type
-				});
-
-			}, "Actions");
-
+		if (!frm.is_new()) {
 
 			// Option 1
 			frm.add_custom_button("Assign to Employee", function () {
@@ -27,15 +16,15 @@ frappe.ui.form.on("Asset Item", {
 
 			}, "Actions");
 
-			
-			frm.add_custom_button("Asset Deallocate", function () {
+			// Option 2
+			frm.add_custom_button("Software Configuration", function () {
 
-				frappe.new_doc("Asset Deallocate", {
+				frappe.new_doc("Software Configuration", {
 					item: frm.doc.name,
+                    device: frm.doc.device_type
 				});
 
 			}, "Actions");
-
             frm.add_custom_button("Asset Decommissioning", function () {
             frappe.new_doc("Asset Decommissioning", {}, (doc) => {
                            
@@ -126,7 +115,8 @@ function toggle_desktop_fields(frm, cdt, cdn) {
 		"processor",
 		"graphics",
 		"screen_size",
-		"make"
+		"make",
+		"ddr_type","warranty_status","warranty_till","device_type","serial_no"
 	];
 
 	all_fields.forEach(field => {
@@ -135,15 +125,19 @@ function toggle_desktop_fields(frm, cdt, cdn) {
 
 	// Monitor logic
 	if (row.component === "Monitor") {
-
 		grid.update_docfield_property("screen_size", "hidden", 0);
 		grid.update_docfield_property("make", "hidden", 0);
+		grid.update_docfield_property("ddr_type", "hidden", 1);
+		grid.update_docfield_property("device_type", "hidden", 1);
         grid.update_docfield_property("hdd_type", "hidden", 1);
 	}
 
 	// CPU logic
 	if (row.component === "CPU") {
-
+		grid.update_docfield_property("screen_size", "hidden", 1);
+		grid.update_docfield_property("make", "hidden", 1);
+		grid.update_docfield_property("serial_no", "hidden", 1);
+		grid.update_docfield_property("device_type", "hidden", 1);
 		grid.update_docfield_property("ram", "hidden", 0);
 		grid.update_docfield_property("processor", "hidden", 0);
 		grid.update_docfield_property("graphics", "hidden", 0);
@@ -161,6 +155,28 @@ function toggle_desktop_fields(frm, cdt, cdn) {
 			grid.update_docfield_property("ssd_space", "hidden", 0);
 			grid.update_docfield_property("hdd_space", "hidden", 0);
 		}
+	}
+	if (row.component === "Keyboard") {
+		grid.update_docfield_property("screen_size", "hidden", 1);
+		grid.update_docfield_property("make", "hidden", 0);
+		grid.update_docfield_property("serial_no", "hidden", 1);
+		grid.update_docfield_property("device_type", "hidden", 0);
+		grid.update_docfield_property("ram", "hidden", 1);
+		grid.update_docfield_property("processor", "hidden", 1);
+		grid.update_docfield_property("graphics", "hidden", 1);
+        grid.update_docfield_property("hdd_type", "hidden", 1);
+
+	}
+	if (row.component === "Mouse") {
+		grid.update_docfield_property("screen_size", "hidden", 1);
+		grid.update_docfield_property("make", "hidden", 0);
+		grid.update_docfield_property("serial_no", "hidden", 1);
+		grid.update_docfield_property("device_type", "hidden", 0);
+		grid.update_docfield_property("ram", "hidden", 1);
+		grid.update_docfield_property("processor", "hidden", 1);
+		grid.update_docfield_property("graphics", "hidden", 1);
+        grid.update_docfield_property("hdd_type", "hidden", 1);
+
 	}
 
 	frm.refresh_field("desktop_configuration");
