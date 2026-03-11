@@ -116,7 +116,7 @@ function toggle_desktop_fields(frm, cdt, cdn) {
 		"graphics",
 		"screen_size",
 		"make",
-		"ddr_type","device_type","serial_no"
+		"ddr_type","device_type","serial_no","warranty_till"
 	];
 
 	all_fields.forEach(field => {
@@ -177,6 +177,9 @@ function toggle_desktop_fields(frm, cdt, cdn) {
 		grid.update_docfield_property("graphics", "hidden", 1);
         grid.update_docfield_property("hdd_type", "hidden", 1);
 
+	}
+	if (row.warranty_status === "Yes") {
+			grid.update_docfield_property("warranty_till", "hidden", 0);
 	}
 
 	frm.refresh_field("desktop_configuration");
