@@ -5,7 +5,7 @@ frappe.ui.form.on("Asset Allocation", {
     refresh(frm) {
         frm.add_custom_button("Asset Deallocate", () => {
             frappe.new_doc("Asset Deallocate", {}, (doc) => {
-                doc.employee = doc.name;
+                doc.empolyee = frm.doc.name;
                 (frm.doc.assigned_device || []).forEach(r => {
                     let row = frappe.model.add_child(doc, "deallocation_device");
                     row.asset = r.asset;   

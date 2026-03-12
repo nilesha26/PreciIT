@@ -10,7 +10,8 @@
   "status",
   "license_detail",
   "map_drive",
-  "expiry_date"
+  "expiry_date",
+  "antivirus_policy"
  ],
  "fields": [
   {
@@ -42,13 +43,18 @@
    "fieldname": "expiry_date",
    "fieldtype": "Date",
    "label": "Expiry Date"
+  },
+  {
+   "fieldname": "antivirus_policy",
+   "fieldtype": "Data",
+   "label": "Antivirus Policy"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-10 12:31:02.186406",
+ "modified": "2026-03-11 16:50:38.216871",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Software Configuration Item",
