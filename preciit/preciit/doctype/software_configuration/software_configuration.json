@@ -14,8 +14,7 @@
    "fieldname": "item",
    "fieldtype": "Link",
    "label": "Item",
-   "options": "Asset Item",
-   "read_only": 1
+   "options": "Asset Item"
   },
   {
    "fieldname": "software_configuration",
@@ -24,17 +23,17 @@
    "options": "Software Configuration Item"
   },
   {
+   "fetch_from": "item.device_type",
    "fieldname": "device",
    "fieldtype": "Link",
    "label": "Device",
-   "options": "Device Type",
-   "read_only": 1
+   "options": "Device Type"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-06 14:07:49.792508",
+ "modified": "2026-03-12 17:21:36.122874",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Software Configuration",

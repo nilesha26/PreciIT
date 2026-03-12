@@ -1,13 +1,10 @@
-# Copyright (c) 2026, Precihole Group and contributors
-# For license information, please see license.txt
-
 import frappe
 from frappe.model.document import Document
 
 
 class AssetDeallocate(Document):
 
-    def on_update(self):
+    def on_submit(self):
 
         if not self.deallocation_device:
             return
@@ -17,10 +14,14 @@ class AssetDeallocate(Document):
             if not row.asset:
                 continue
 
+            # Update Asset Status
             frappe.db.set_value(
-                "Asset Item",   # <-- confirm this doctype name
-                row.asset,       # <-- correct field (must be the document name)
+                "Asset Item",
+                row.asset,
                 "item_status",
                 "Available",
                 update_modified=False
             )
+
+            
+

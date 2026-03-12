@@ -18,10 +18,9 @@ class AssetDecommissioning(Document):
                 continue
 
             frappe.db.set_value(
-                "System Item",   # <-- confirm this doctype name
+                "Asset Item",   # <-- confirm this doctype name
                 row.asset,       # <-- correct field (must be the document name)
                 "item_status",
                 "Decommissioning",
-                update_modified=False,
-				ignore_version=True
+                update_modified=False
             )
