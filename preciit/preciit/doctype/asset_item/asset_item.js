@@ -16,7 +16,7 @@ frappe.ui.form.on("Asset Item", {
 				});
 
 			}, "Actions");
-			if (frm.doc.item_status === "Software Configured") {
+			if (frm.doc.item_status === "Software Configured"   && frm.doc.item_status === "Available") {
 
 					frm.add_custom_button("Assign to Employee", function () {
 
