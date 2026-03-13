@@ -9,6 +9,7 @@
   "date",
   "empolyee",
   "employee_name",
+  "company",
   "deallocation_device"
  ],
  "fields": [
@@ -34,12 +35,19 @@
    "fieldtype": "Table",
    "label": "Device",
    "options": "System Configuration Item"
+  },
+  {
+   "fetch_from": "empolyee.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-12 12:14:55.901952",
+ "modified": "2026-03-13 15:38:25.520774",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Asset Deallocate",

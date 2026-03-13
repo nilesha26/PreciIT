@@ -10,6 +10,7 @@
   "employee_name",
   "assign_date",
   "department",
+  "company",
   "assigned_device"
  ],
  "fields": [
@@ -30,6 +31,7 @@
    "fetch_from": "employee.employee_name",
    "fieldname": "employee_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Employee Name"
   },
   {
@@ -43,12 +45,19 @@
    "fieldtype": "Link",
    "label": "Department",
    "options": "Department"
+  },
+  {
+   "fetch_from": "employee.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-11 15:45:44.923528",
+ "modified": "2026-03-13 15:37:09.686617",
  "modified_by": "Administrator",
  "module": "PreciIT",
  "name": "Asset Allocation",
